@@ -21,7 +21,9 @@ void swap(int *a, int *b) {
     // Hint: Use a temporary variable to hold the value pointed to by one pointer, then assign the value from the other pointer, and finally assign the temporary value to the second pointer. Remember to dereference with *.
 
     // Placeholder
-    printf("Swap function not implemented yet.\n");
+    int temp = *a;
+    *a = *b;
+    *b = temp;
 }
 
 int main() {
@@ -33,6 +35,7 @@ int main() {
     printf("Before swap: x=%d, y=%d\n", x, y);
 
     // TODO: Call swap(&x, &y);
+    swap(&x, &y);
 
     printf("After swap: x=%d, y=%d\n", x, y);
 

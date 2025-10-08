@@ -19,10 +19,23 @@
 int main() {
     // TODO: Implement the exercise here
     // Hint: Remember to use & for addresses and * for dereferencing. Declare a float, point to it, print value and address, modify via pointer, print again.
+    
 
     // Placeholder - replace with your implementation
+    float temp = 25.5f;
+    float *ptr = &temp;
+    
     printf("Exercise 1: Basic Float Pointer\n");
-    printf("Implement the TODO above to see correct output.\n");
+    printf("Original value: %f\n", temp);
+    printf("Address: %p\n", &temp);
+    
+    *ptr = 30.0f;
+    
+    printf("Changed value: %f\n", temp);
+    
+    if(temp == 30.0f) {
+    printf("Correct implementation! ✓\n");
+    }
 
     return 0;
 }
